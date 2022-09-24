@@ -1,0 +1,16 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# Climate Characteristics
+
+PROCESSING
+
+```{r load, cache = TRUE, echo = TRUE}
+url <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
+download.file(url, "StormData.csv.bz2")
+df_storm <- read.csv("StormData.csv.bz2")
+str(df_storm)
+```
